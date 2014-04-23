@@ -1,0 +1,37 @@
+---
+- distro: debian
+  releases:
+  - codename: squeeze
+    version: 6
+    release: 2011-02-06
+    eol: 2014-05-04
+  - codename: wheezy
+    version: 7
+    release: 2013-05-04
+    eol: 2016?
+  - codename: jessie
+    version: 8
+    release: 2015?
+    eol: unknown
+- distro: centos
+  releases:
+  - version: 5
+    release: 2007-04
+    eol: March 2017
+  - version: 6
+    release: 2011-06
+    eol: June 2011
+- distro: ubuntu
+  releases:
+  - version: 10.04
+    codename: Lucid Lynx
+    release: April 2010
+    eol: April 2015
+  - version: 12.04
+    codename: Precise Pangolin
+    release: April 2012
+    eol: April 2017
+  - version: 14.04
+    codename: Trusty Tahir
+    release: April 2014
+    eol: April 2019

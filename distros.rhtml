@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<style type='text/css'>
+			body {
+				font-family: sans-serif;
+				font-size: 150%;
+			}
+			td {
+				padding: 5px;
+			}
+			.distro  {
+				font-weight: bold;
+				color: red;
+				vertical-align: top;
+				border-right: 2px solid blue;
+			}
+		</style>
+		<title>Distro EOL dates</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Distro</th>
+				<th>Codename</th>
+				<th>Version</th>
+				<th>Release Date</th>
+				<th>End of Life</th>
+			</tr>
+			<% for distro in distros %>
+				<% distro["releases"].each_with_index do |release,i| %>
+					<tr>
+						<% if i == 0 %>
+							<td class='distro' rowspan='<%=distro['releases'].length%>'><%=distro["distro"]%></td>
+						<% end %>
+						<td class='version'><%=release["version"]%></td>
+						<td class='codename'><%=release["codename"] || "-" %></td>
+						<td class='release'><%=release["release"]%></td>
+						<td class='eol'><%=release["eol"]%></td>
+					</tr>
+				<% end %>
+			<% end %>
+		</table>
+	</body>
+</html>
