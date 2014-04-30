@@ -1,37 +1,99 @@
 ---
 - distro: debian
   releases:
+  - codename: lenny
+    version: 5
+    release: February 2009
+    eol: February 2012
+    state: dead
+    kernel: 2.6.26
+    mysql: 5.0.51a
+    apache: 2.2.9
+    php: 5.2.6
   - codename: squeeze
     version: 6
-    release: 2011-02-06
-    eol: 2014-05-04
+    release: February 2011
+    eol: "May 2014 (LTS: Feb 2016)"
+    kernel: 2.6.32
+    mysql: 5.1.49
+    apache: 2.2.16
+    php: 5.3.3
   - codename: wheezy
     version: 7
-    release: 2013-05-04
+    release: May 2013
     eol: 2016?
+    kernel: 3.2.41
+    mysql: 5.5.30
+    php: 5.4.4
+    apache: 2.2.22
   - codename: jessie
     version: 8
     release: 2015?
     eol: unknown
+    kernel: unknown
+    state: future
 - distro: centos
   releases:
   - version: 5
-    release: 2007-04
+    release: April 2007
     eol: March 2017
+    kernel: 2.6.18
+    mysql: 5.0.95
+    apache: 2.2.3
+    php: 5.1.6
   - version: 6
-    release: 2011-06
-    eol: June 2011
+    release: June 2011
+    eol: June 2020?
+    kernel: 2.6.32
+    mysql: 5.1.71
+    apache: 2.2.15
+    php: 5.3.3
+  - version: 7
+    release: unknown
+    eol: plus 10 years?
+    kernel: unknown
+    state: future
+    mysql: unknown
+    apache: unknown
+    php: unknown
 - distro: ubuntu
   releases:
+  - version: 8.04
+    codename: Hardy Heron
+    release: April 2008
+    eol: May 2013
+    state: dead
+    kernel: 2.6.24
+    mysql: unknown
+    php: unknown
+    apache: unknown
   - version: 10.04
     codename: Lucid Lynx
     release: April 2010
     eol: April 2015
+    kernel: 2.6.32
+    mysql: 5.1.41
+    php: 5.3.2
+    apache: 2.2.14
   - version: 12.04
     codename: Precise Pangolin
     release: April 2012
     eol: April 2017
+    kernel: 3.2.0
+    mysql: 5.5.22
+    apache: 2.2.22
+    php: 5.3.10
   - version: 14.04
     codename: Trusty Tahir
     release: April 2014
     eol: April 2019
+    kernel: 3.13.0
+    mysql: 5.5.35
+    apache: 2.4.7
+    php: 5.5.9
+  - version: 16.04
+    codename: Xadjective Xanimal
+    release: April 2016
+    eol: April 2021
+    kernel: unknown 
+    state: future

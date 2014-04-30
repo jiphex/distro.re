@@ -1,2 +1,2 @@
-index.html: distros.rhtml distro.yml
+index.html: mkpage.rb distros.rhtml distro.yml
 	ruby mkpage.rb

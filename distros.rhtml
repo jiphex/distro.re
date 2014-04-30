@@ -3,20 +3,46 @@
 	<head>
 		<style type='text/css'>
 			body {
-				font-family: sans-serif;
-				font-size: 150%;
+				font-family: 'Comic Sans', serif;
+				font-size: 17pt;
 			}
 			td {
-				padding: 5px;
+				padding: 5px 20px 5px 20px;
+			}
+			tr.dead td.data {
+				background-color: #ffcccc;
+				text-decoration: line-through;
+			}
+			tr.future td.data {
+				color: #777;
+				font-style: italic;
+			}
+			tr.close td.data {
+				background-color: #ffffcc;
+				font-style: italic;
+			}
+			tr.alive td.data.eol {
+				font-weight: bold
 			}
 			.distro  {
 				font-weight: bold;
-				color: red;
 				vertical-align: top;
-				border-right: 2px solid blue;
+				border-right: 2px solid #ccc;
+			}
+			td {
+				text-align: center;
+			}
+			th {
+				border-bottom: 2px solid #aaa;
+			}
+			tr.alive:hover td.data{
+				background-color: #eee;
+			}
+			tr.dead:hover td.data{
+				background-color: #f00;
 			}
 		</style>
-		<title>Distro EOL dates</title>
+		<title>Distro EOL dates</title>	
 	</head>
 	<body>
 		<table>
@@ -26,20 +52,36 @@
 				<th>Version</th>
 				<th>Release Date</th>
 				<th>End of Life</th>
+				<th>Kernel</th>
+				<th>Apache</th>
+				<th>PHP</th>
+				<th>MySQL</th>
 			</tr>
 			<% for distro in distros %>
 				<% distro["releases"].each_with_index do |release,i| %>
-					<tr>
+					<% if release["state"] %>
+						<tr class='<%=release["state"]%>'>
+					<% else %>
+						<tr class='alive'>
+					<% end %>
 						<% if i == 0 %>
 							<td class='distro' rowspan='<%=distro['releases'].length%>'><%=distro["distro"]%></td>
 						<% end %>
-						<td class='version'><%=release["version"]%></td>
-						<td class='codename'><%=release["codename"] || "-" %></td>
-						<td class='release'><%=release["release"]%></td>
-						<td class='eol'><%=release["eol"]%></td>
+						<td class='data codename'><%=release["codename"] or "-" %></td>
+						<td class='data version'><%=release["version"]%></td>
+						<td class='data release'><%=release["release"]%></td>
+						<td class='data eol'><%=release["eol"]%></td>
+						<td class='data kernel'><%=release["kernel"] or "unknown"%></td>
+						<td class='data apache'><%=release["apache"] or "unknown"%></td>
+						<td class='data php'><%=release["php"] or "unknown"%></td>
+						<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
 					</tr>
 				<% end %>
 			<% end %>
 		</table>
+		<p><a href=<%=distrofile%>>Raw Data</a></p>
+		<p>Data last updated: <%=updated%></p>
+		<p>Errors to james at t l y k dot eu.</p>
+		<p>Hosted on <a href='http://bigv.io/?jhannah'>BigV</a>.</p>
 	</body>
 </html>

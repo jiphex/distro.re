@@ -2,8 +2,10 @@
 require 'yaml'
 require 'erb'
 
-distros = YAML.load_file 'distro.yml'
+distrofile = 'distro.yml'
+distros = YAML.load_file distrofile
 template = 'distros.rhtml'
+updated = File.mtime(distrofile)
 
 erb = ERB.new(File.read(template))
 
