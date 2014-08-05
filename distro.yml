@@ -5,7 +5,7 @@
     version: 5
     release: February 2009
     eol: February 2012
-    state: dead
+    state: dead 
     kernel: 2.6.26
     mysql: 5.0.51a
     apache: 2.2.9
@@ -49,13 +49,12 @@
     apache: 2.2.15
     php: 5.3.3
   - version: 7
-    release: unknown
-    eol: plus 10 years?
-    kernel: unknown
-    state: future
-    mysql: unknown
-    apache: unknown
-    php: unknown
+    release: July 2014
+    eol: 2024?
+    kernel: 3.10.0
+    mysql: mariadb-5.5.35
+    apache: 2.4.6
+    php: 5.4.16
 - distro: ubuntu
   releases:
   - version: 8.04
