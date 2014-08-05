@@ -5,3 +5,4 @@ install:
 ruby:
 - "1.9.3"
 language: ruby
+script: make
