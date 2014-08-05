@@ -1,0 +1,7 @@
+before_install:
+- sudo apt-get update -qq
+install:
+- sudo apt-get install -qq build-essential
+ruby:
+- "1.9.3"
+language: ruby
