@@ -56,6 +56,7 @@
 				<th>Apache</th>
 				<th>PHP</th>
 				<th>MySQL</th>
+				<th>init</th>
 			</tr>
 			<% for distro in distros %>
 				<% distro["releases"].each_with_index do |release,i| %>
@@ -75,6 +76,7 @@
 						<td class='data apache'><%=release["apache"] or "unknown"%></td>
 						<td class='data php'><%=release["php"] or "unknown"%></td>
 						<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
+						<td class='data init'><%=release["init"] or "unknown"%></td>
 					</tr>
 				<% end %>
 			<% end %>
@@ -82,6 +84,12 @@
 		<p><a href=<%=distrofile%>>Raw Data</a></p>
 		<p>Data last updated: <%=updated%></p>
 		<p>Errors/Pull Requests on <a href='https://github.com/jiphex/distro.re'>github</a> or via email to james at t l y k dot eu.</p>
+		<p>Sources:
+		<ul>
+			<li><a href='https://wiki.ubuntu.com/Releases'/>Ubuntu</a></li>
+			<li>Others...</li>
+		</ul>
+		</p>
 		<p>Hosted on <a href='http://bigv.io/?jhannah'>BigV</a>.</p>
 	    <!-- Piwik -->
 		<script type="text/javascript">

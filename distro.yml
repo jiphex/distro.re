@@ -10,6 +10,7 @@
     mysql: 5.0.51a
     apache: 2.2.9
     php: 5.2.6
+    init: sysvinit
   - codename: squeeze
     version: 6
     release: February 2011
@@ -18,6 +19,7 @@
     mysql: 5.1.49
     apache: 2.2.16
     php: 5.3.3
+    init: sysvinit
   - codename: wheezy
     version: 7
     release: May 2013
@@ -26,12 +28,14 @@
     mysql: 5.5.30
     php: 5.4.4
     apache: 2.2.22
+    init: sysvinit
   - codename: jessie
     version: 8
     release: 2015?
     eol: unknown
     kernel: unknown
     state: future
+    init: systemd
 - distro: centos
   releases:
   - version: 5
@@ -41,6 +45,7 @@
     mysql: 5.0.95
     apache: 2.2.3
     php: 5.1.6
+    init: sysvinit
   - version: 6
     release: June 2011
     eol: June 2020?
@@ -48,6 +53,7 @@
     mysql: 5.1.71
     apache: 2.2.15
     php: 5.3.3
+    init: sysvinit
   - version: 7
     release: July 2014
     eol: 2024?
@@ -55,6 +61,7 @@
     mysql: mariadb-5.5.35
     apache: 2.4.6
     php: 5.4.16
+    init: systemd
 - distro: ubuntu
   releases:
   - version: 8.04
@@ -66,6 +73,7 @@
     mysql: unknown
     php: unknown
     apache: unknown
+    init: upstart
   - version: 10.04
     codename: Lucid Lynx
     release: April 2010
@@ -74,6 +82,7 @@
     mysql: 5.1.41
     php: 5.3.2
     apache: 2.2.14
+    init: upstart
   - version: 12.04
     codename: Precise Pangolin
     release: April 2012
@@ -82,6 +91,7 @@
     mysql: 5.5.22
     apache: 2.2.22
     php: 5.3.10
+    init: upstart
   - version: 14.04
     codename: Trusty Tahir
     release: April 2014
@@ -90,9 +100,11 @@
     mysql: 5.5.35
     apache: 2.4.7
     php: 5.5.9
+    init: upstart
   - version: 16.04
     codename: Xadjective Xanimal
     release: April 2016
     eol: April 2021
     kernel: unknown 
     state: future
+    init: systemd
