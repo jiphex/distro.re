@@ -29,11 +29,23 @@
     php: 5.4.4
     apache: 2.2.22
     init: sysvinit
+  - codename: wheezy-backports
+    version: 7
+    release: May 2013
+    eol: 2016?
+    kernel: 3.16
+    mysql: 5.5.30
+    php: 5.4.4
+    apache: 2.2.22
+    init: sysvinit
   - codename: jessie
     version: 8
-    release: 2015?
-    eol: unknown
-    kernel: unknown
+    release: April 2015
+    eol: 2018?
+    kernel: 3.16.0
+    mysql: 5.5.42
+    php: 5.6.7
+    apache: 2.4.10
     state: future
     init: systemd
 - distro: centos
