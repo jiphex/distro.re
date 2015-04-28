@@ -46,7 +46,6 @@
     mysql: 5.5.42
     php: 5.6.7
     apache: 2.4.10
-    state: future
     init: systemd
 - distro: centos
   releases:
