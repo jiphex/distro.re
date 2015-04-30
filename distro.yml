@@ -47,6 +47,26 @@
     php: 5.6.7
     apache: 2.4.10
     init: systemd
+  - codename: stretch
+    version: 9
+    release: 2017?
+    eol: 2020?
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    apache: unknown
+    init: systemd
+    state: future
+  - codename: buster
+    version: 10
+    release: 2019?
+    eol: 2022?
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    apache: unknown
+    init: systemd
+    state: future
 - distro: centos
   releases:
   - version: 5
