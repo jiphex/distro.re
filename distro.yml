@@ -71,7 +71,7 @@
   releases:
   - version: 5
     release: April 2007
-    eol: March 2017
+    eol: 31 March 2017
     kernel: 2.6.18
     mysql: 5.0.95
     apache: 2.2.3
@@ -79,7 +79,7 @@
     init: sysvinit
   - version: 6
     release: June 2011
-    eol: June 2020?
+    eol: 30 Nov 2020
     kernel: 2.6.32
     mysql: 5.1.71
     apache: 2.2.15
@@ -87,7 +87,7 @@
     init: sysvinit
   - version: 7
     release: July 2014
-    eol: 2024?
+    eol: 31 June 2024
     kernel: 3.10.0
     mysql: mariadb-5.5.35
     apache: 2.4.6
