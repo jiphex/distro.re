@@ -19,7 +19,9 @@
 			}
 			tr.close td.data {
 				background-color: #ffffcc;
-				font-style: italic;
+			}
+			tr.close td.data.eol {
+				font-weight: bold
 			}
 			tr.alive td.data.eol {
 				font-weight: bold
@@ -82,29 +84,17 @@
 			<% end %>
 		</table>
 		<p><a href=<%=distrofile%>>Raw Data</a></p>
+		<p>Non-LTS ubuntu releases aren't included because their lifecycle is too short for serious servers.</a>
 		<p>Data last updated: <%=updated%></p>
-		<p>Errors/Pull Requests on <a href='https://github.com/jiphex/distro.re'>github</a> or via email to james at t l y k dot eu.</p>
+		<p>Errors/Pull Requests on <a href='https://github.com/jiphex/distro.re'>github</a> or via <a href='mailto:james+distro@tlyk.eu'>email</a>.</p>
 		<p>Sources:
 		<ul>
-			<li><a href='https://wiki.ubuntu.com/Releases'/>Ubuntu</a></li>
+			<li><a href='https://wiki.ubuntu.com/Releases'/>Ubuntu</a> <a href='http://packages.ubuntu.com/'>(Packages)</a></li>
+			<li><a href='https://wiki.debian.org/DebianReleases'/>Debian</a> <a href='https://packages.debian.org/'/>(Packages)</a></li>
+			<li><a href='http://wiki.centos.org/FAQ/General'>CentOS</a></li>
 			<li>Others...</li>
 		</ul>
 		</p>
 		<p>Hosted on <a href='http://bigv.io/?jhannah'>BigV</a>.</p>
-	    <!-- Piwik -->
-		<script type="text/javascript">
-		var _paq = _paq || [];
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://track.tlyk.eu/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
-			_paq.push(['setSiteId', 2]);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-		})();
-		</script>
-		<noscript><p><img src="http://track.tlyk.eu/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
-		<!-- End Piwik Code -->
 	</body>
 </html>
