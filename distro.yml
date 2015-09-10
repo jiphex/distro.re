@@ -20,6 +20,7 @@
     apache: 2.2.16
     php: 5.3.3
     init: sysvinit
+    state: close
   - codename: wheezy
     version: 7
     release: May 2013
@@ -43,6 +44,15 @@
     release: April 2015
     eol: 2018?
     kernel: 3.16.0
+    mysql: 5.5.42
+    php: 5.6.7
+    apache: 2.4.10
+    init: systemd
+  - codename: jessie-backports
+    version: 8
+    release: April 2015
+    eol: 2018?
+    kernel: 4.1
     mysql: 5.5.42
     php: 5.6.7
     apache: 2.4.10
@@ -109,6 +119,7 @@
     codename: Lucid Lynx
     release: April 2010
     eol: April 2015
+    state: dead
     kernel: 2.6.32
     mysql: 5.1.41
     php: 5.3.2
