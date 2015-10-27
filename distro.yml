@@ -144,7 +144,7 @@
     php: 5.5.9
     init: upstart
   - version: 16.04
-    codename: Xadjective Xanimal
+    codename: Xenial Xerus
     release: April 2016
     eol: April 2021
     kernel: unknown 
