@@ -139,7 +139,7 @@
     release: April 2014
     eol: April 2019
     kernel: 3.13.0
-    mysql: 5.5.35
+    mysql: 5.5.47
     apache: 2.4.7
     php: 5.5.9
     init: upstart
