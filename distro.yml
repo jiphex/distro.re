@@ -20,7 +20,7 @@
     apache: 2.2.16
     php: 5.3.3
     init: sysvinit
-    state: close
+    state: dead
   - codename: wheezy
     version: 7
     release: May 2013
