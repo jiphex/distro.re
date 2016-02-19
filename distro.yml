@@ -24,7 +24,7 @@
   - codename: wheezy
     version: 7
     release: May 2013
-    eol: 2016?
+    eol: "April 2016 (LTS: May 2018)"
     kernel: 3.2.41
     mysql: 5.5.30
     php: 5.4.4
