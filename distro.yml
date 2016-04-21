@@ -151,5 +151,4 @@
     mysql: 5.6.28
     php: 5.6.17
     apache: 2.4.18
-    state: current
     init: systemd
