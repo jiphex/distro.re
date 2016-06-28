@@ -150,7 +150,7 @@
     release: April 2016
     eol: April 2021
     kernel: 4.4.0
-    mysql: 5.6.28
+    mysql: 5.7.12
     php: 7.0.4
     apache: 2.4.18
     init: systemd
