@@ -1,16 +1,25 @@
 ---
+- distro: alpine
+  releases:
+    - codename: v3.4
+      version: 3.4
+      git: 2.8.3
+    - codename: v3.3
+      version: 3.3
+      git: 2.6.6
 - distro: debian
   releases:
   - codename: lenny
     version: 5
     release: February 2009
     eol: February 2012
-    state: dead 
+    state: dead
     kernel: 2.6.26
     mysql: 5.0.51a
     apache: 2.2.9
     php: 5.2.6
     init: sysvinit
+    git: 1.5.6.5
   - codename: squeeze
     version: 6
     release: February 2011
@@ -21,6 +30,7 @@
     php: 5.3.3
     init: sysvinit
     state: dead
+    git: 1.7.2.5
   - codename: wheezy
     version: 7
     release: May 2013
@@ -31,6 +41,7 @@
     php: 5.4.4
     apache: 2.2.22
     init: sysvinit
+    git: 1.7.10.4
   - codename: wheezy-backports
     version: 7
     release: May 2013
@@ -41,6 +52,7 @@
     php: 5.4.4
     apache: 2.2.22
     init: sysvinit
+    git: 1.9.1
   - codename: jessie
     version: 8
     release: April 2015
@@ -50,6 +62,7 @@
     php: 5.6.7
     apache: 2.4.10
     init: systemd
+    git: 2.1.4
   - codename: jessie-backports
     version: 8
     release: April 2015
@@ -59,6 +72,7 @@
     php: 5.6.7
     apache: 2.4.10
     init: systemd
+    git: 2.1.4
   - codename: stretch
     version: 9
     release: 2017?
@@ -68,6 +82,7 @@
     php: unknown
     apache: unknown
     init: systemd
+    git: 2.9.3
     state: future
   - codename: buster
     version: 10
@@ -97,6 +112,7 @@
     apache: 2.2.15
     php: 5.3.3
     init: sysvinit
+    git: 1.7.1
   - version: 7
     release: July 2014
     eol: 31 June 2024
@@ -105,6 +121,7 @@
     apache: 2.4.6
     php: 5.4.16
     init: systemd
+    git: 1.8.3.1
 - distro: ubuntu
   releases:
   - version: 8.04
@@ -136,6 +153,7 @@
     apache: 2.2.22
     php: 5.3.10
     init: upstart
+    git: 1.7.9.5
   - version: 14.04
     codename: Trusty Tahir
     release: April 2014
@@ -145,6 +163,7 @@
     apache: 2.4.7
     php: 5.5.9
     init: upstart
+    git: 1.9.1
   - version: 16.04
     codename: Xenial Xerus
     release: April 2016
@@ -154,3 +173,4 @@
     php: 7.0.4
     apache: 2.4.18
     init: systemd
+    git: 2.7.4
