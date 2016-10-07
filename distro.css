@@ -1,0 +1,49 @@
+body {
+	font-family: 'Comic Sans', serif;
+	font-size: 17pt;
+}
+td {
+	padding: 5px 20px 5px 20px;
+}
+tr.dead td.data {
+	text-decoration: line-through;
+}
+tr.future td.data {
+	color: #777;
+	font-style: italic;
+}
+tr.close td.data.eol {
+	font-weight: bold
+}
+tr.alive td.data.eol {
+	font-weight: bold
+}
+.distro  {
+	font-weight: bold;
+	vertical-align: top;
+	border-right: 2px solid #ccc;
+}
+td {
+	text-align: center;
+}
+th {
+	border-bottom: 2px solid #aaa;
+}
+
+@media screen {
+	#attrib {
+		display: none;
+	}
+	tr.alive:hover td.data{
+		background-color: #eee;
+	}
+	tr.dead:hover td.data{
+		background-color: #f00;
+	}
+	tr.close td.data {
+		background-color: #ffffcc;
+	}
+	tr.dead td.data {
+		background-color: #ffcccc;
+	}
+}

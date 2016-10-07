@@ -1,49 +1,9 @@
 <!doctype html>
 <html>
 	<head>
-		<style type='text/css'>
-			body {
-				font-family: 'Comic Sans', serif;
-				font-size: 17pt;
-			}
-			td {
-				padding: 5px 20px 5px 20px;
-			}
-			tr.dead td.data {
-				background-color: #ffcccc;
-				text-decoration: line-through;
-			}
-			tr.future td.data {
-				color: #777;
-				font-style: italic;
-			}
-			tr.close td.data {
-				background-color: #ffffcc;
-			}
-			tr.close td.data.eol {
-				font-weight: bold
-			}
-			tr.alive td.data.eol {
-				font-weight: bold
-			}
-			.distro  {
-				font-weight: bold;
-				vertical-align: top;
-				border-right: 2px solid #ccc;
-			}
-			td {
-				text-align: center;
-			}
-			th {
-				border-bottom: 2px solid #aaa;
-			}
-			tr.alive:hover td.data{
-				background-color: #eee;
-			}
-			tr.dead:hover td.data{
-				background-color: #f00;
-			}
-		</style>
+		<link rel='stylesheet' type='text/css' href='distro.css'/>
+		<link rel='stylesheet' type='text/css' media="print" href='print.css'/>
+		
 		<title>Distro EOL dates</title>	
 	</head>
 	<body>
@@ -83,18 +43,23 @@
 				<% end %>
 			<% end %>
 		</table>
-		<p><a href=<%=distrofile%>>Raw Data</a></p>
-		<p>Non-LTS ubuntu releases aren't included because their lifecycle is too short for serious servers.</a>
 		<p>Data last updated: <%=updated%></p>
-		<p>Errors/Pull Requests on <a href='https://github.com/jiphex/distro.re'>github</a> or via <a href='mailto:james+distro@tlyk.eu'>email</a>.</p>
-		<p>Sources:
-		<ul>
-			<li><a href='https://wiki.ubuntu.com/Releases'/>Ubuntu</a> <a href='http://packages.ubuntu.com/'>(Packages)</a></li>
-			<li><a href='https://wiki.debian.org/DebianReleases'/>Debian</a> <a href='https://packages.debian.org/'/>(Packages)</a> <a href='https://wiki.debian.org/LTS'/>(LTS)</a></li>
-			<li><a href='http://wiki.centos.org/FAQ/General'>CentOS</a></li>
-			<li>Others...</li>
-		</ul>
-		</p>
-		<p>Hosted on <a href='http://bigv.io/?jhannah'>BigV</a>.</p>
+		<div id='meta'>
+			<p><a href=<%=distrofile%>>Raw Data</a></p>
+			<p>Non-LTS ubuntu releases aren't included because their lifecycle is too short for serious servers.</a>
+			<p>Errors/Pull Requests on <a href='https://github.com/jiphex/distro.re'>github</a> or via <a href='mailto:james+distro@tlyk.eu'>email</a>.</p>
+			<p>Sources:
+			<ul>
+				<li><a href='https://wiki.ubuntu.com/Releases'/>Ubuntu</a> <a href='http://packages.ubuntu.com/'>(Packages)</a></li>
+				<li><a href='https://wiki.debian.org/DebianReleases'/>Debian</a> <a href='https://packages.debian.org/'/>(Packages)</a> <a href='https://wiki.debian.org/LTS'/>(LTS)</a></li>
+				<li><a href='http://wiki.centos.org/FAQ/General'>CentOS</a></li>
+				<li>Others...</li>
+			</ul>
+			</p>
+			<p>Hosted on <a href='http://bigv.io/?jhannah'>BigV</a>.</p>
+		</div>
+		<div id='attrib'>
+			Printed from https://distro.re
+		</div>
 	</body>
 </html>

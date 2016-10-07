@@ -1,0 +1,13 @@
+#meta {
+	display: none;
+}
+tr.data {
+	background-color: #fff;
+	color: red;
+}
+tr.dead tr.data {
+	background-color: #aaa;
+}
+body {
+	font-size: 82%;
+}
