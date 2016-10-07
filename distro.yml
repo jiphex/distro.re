@@ -55,7 +55,7 @@
     release: April 2015
     eol: 2018?
     kernel: 4.3
-    mysql: 5.5.42
+    mysql: 5.6.30
     php: 5.6.7
     apache: 2.4.10
     init: systemd
