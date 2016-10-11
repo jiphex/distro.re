@@ -19,6 +19,7 @@
 				<th>PHP</th>
 				<th>MySQL</th>
 				<th>init</th>
+				<th>Git</th>
 			</tr>
 			<% for distro in distros %>
 				<% distro["releases"].each_with_index do |release,i| %>
@@ -39,6 +40,7 @@
 						<td class='data php'><%=release["php"] or "unknown"%></td>
 						<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
 						<td class='data init'><%=release["init"] or "unknown"%></td>
+						<td class='data git'><%=release["git"] or "unknown"%></td>
 					</tr>
 				<% end %>
 			<% end %>
