@@ -89,6 +89,7 @@
     apache: 2.2.3
     php: 5.1.6
     init: sysvinit
+    state: dead
   - version: 6
     release: June 2011
     eol: 30 Nov 2020
@@ -136,6 +137,7 @@
     apache: 2.2.22
     php: 5.3.10
     init: upstart
+    state: close
   - version: 14.04
     codename: Trusty Tahir
     release: April 2014
