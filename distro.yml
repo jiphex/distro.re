@@ -156,3 +156,13 @@
     php: 7.0.4
     apache: 2.4.18
     init: systemd
+  - version: 18.04
+    codename: ?? ??
+    release: April 2018
+    eol: April 2023
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    apache: unknown
+    init: systemd?
+    state: future
