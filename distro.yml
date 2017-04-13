@@ -137,7 +137,7 @@
     apache: 2.2.22
     php: 5.3.10
     init: upstart
-    state: close
+    state: dead
   - version: 14.04
     codename: Trusty Tahir
     release: April 2014
