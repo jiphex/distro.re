@@ -1,5 +1,5 @@
 ---
-- distro: debian
+- distro: Debian
   releases:
   - codename: lenny
     version: 5
@@ -79,9 +79,10 @@
     apache: unknown
     init: systemd
     state: future
-- distro: centos
+- distro: Centos/RHEL
   releases:
   - version: 5
+    codename: Tikanga
     release: April 2007
     eol: 31 March 2017
     kernel: 2.6.18
@@ -91,6 +92,7 @@
     init: sysvinit
     state: dead
   - version: 6
+    codename: Santiago
     release: June 2011
     eol: 30 Nov 2020
     kernel: 2.6.32
@@ -99,6 +101,7 @@
     php: 5.3.3
     init: sysvinit
   - version: 7
+    codename: Maipo
     release: July 2014
     eol: 31 June 2024
     kernel: 3.10.0
@@ -106,7 +109,7 @@
     apache: 2.4.6
     php: 5.4.16
     init: systemd
-- distro: ubuntu
+- distro: Ubuntu
   releases:
   - version: 8.04
     codename: Hardy Heron
