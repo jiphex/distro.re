@@ -1,16 +1,6 @@
 ---
 - distro: Debian
   releases:
-  - codename: lenny
-    version: 5
-    release: February 2009
-    eol: February 2012
-    state: dead 
-    kernel: 2.6.26
-    mysql: 5.0.51a
-    apache: 2.2.9
-    php: 5.2.6
-    init: sysvinit
   - codename: squeeze
     version: 6
     release: February 2011
@@ -111,16 +101,6 @@
     init: systemd
 - distro: Ubuntu
   releases:
-  - version: 8.04
-    codename: Hardy Heron
-    release: April 2008
-    eol: May 2013
-    state: dead
-    kernel: 2.6.24
-    mysql: unknown
-    php: unknown
-    apache: unknown
-    init: upstart
   - version: 10.04
     codename: Lucid Lynx
     release: April 2010
