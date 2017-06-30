@@ -51,14 +51,13 @@
     init: systemd
   - codename: stretch
     version: 9
-    release: Mid-2017
+    release: June 2017
     eol: 2020?
     kernel: 4.9
     mysql: mariadb-10.1
     php: 7.0
     apache: 2.4.25
     init: systemd
-    state: future
   - codename: buster
     version: 10
     release: 2019?
