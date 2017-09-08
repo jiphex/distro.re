@@ -6,7 +6,7 @@
     release: February 2011
     eol: "May 2014 (LTS: Feb 2016)"
     kernel: 2.6.32
-    mysql: 5.1.49
+    mysql: 5.1
     apache: 2.2.16
     php: 5.3.3
     init: sysvinit
@@ -17,7 +17,7 @@
     state: close
     eol: "April 2016 (LTS: May 2018)"
     kernel: 3.2.41
-    mysql: 5.5.30
+    mysql: 5.5
     php: 5.4.4
     apache: 2.2.22
     init: sysvinit
@@ -27,7 +27,7 @@
     eol: 2016?
     state: close
     kernel: 3.16
-    mysql: 5.5.30
+    mysql: 5.5
     php: 5.4.4
     apache: 2.2.22
     init: sysvinit
@@ -36,7 +36,7 @@
     release: April 2015
     eol: '2018? (LTS: 2020)'
     kernel: 3.16.0
-    mysql: 5.5.42
+    mysql: 5.5
     php: 5.6.7
     apache: 2.4.10
     init: systemd
@@ -45,7 +45,7 @@
     release: April 2015
     eol: 2018?
     kernel: 4.3
-    mysql: 5.6.30
+    mysql: 5.5
     php: 5.6.7
     apache: 2.4.10
     init: systemd
