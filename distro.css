@@ -18,6 +18,9 @@ tr.close td.data.eol {
 tr.alive td.data.eol {
 	font-weight: bold
 }
+td.codename {
+	font-style: italic;
+}
 .distro  {
 	font-weight: bold;
 	vertical-align: top;

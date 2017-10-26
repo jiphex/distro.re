@@ -30,7 +30,7 @@
 						<% if i == 0 %>
 							<td class='distro' rowspan='<%=distro['releases'].length%>'><%=distro["distro"]%></td>
 						<% end %>
-						<td class='data codename'><%=release["codename"] or "-" %></td>
+						<td class='data codename'>&#8220;<%=release["codename"] or "-" %>&#8221;</td>
 						<td class='data version'><%=release["version"]%></td>
 						<td class='data release'><%=release["release"]%></td>
 						<td class='data eol'><%=release["eol"]%></td>
