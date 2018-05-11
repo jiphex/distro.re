@@ -18,6 +18,7 @@
 				<th>Apache</th>
 				<th>PHP</th>
 				<th>MySQL</th>
+				<th>GCC</th>
 				<th>init</th>
 			</tr>
 			<% for distro in distros %>
@@ -38,6 +39,7 @@
 						<td class='data apache'><%=release["apache"] or "unknown"%></td>
 						<td class='data php'><%=release["php"] or "unknown"%></td>
 						<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
+						<td class='data gcc'><%=release["gcc"] or "unknown"%></td>
 						<td class='data init'><%=release["init"] or "unknown"%></td>
 					</tr>
 				<% end %>
