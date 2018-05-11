@@ -9,6 +9,7 @@
     mysql: 5.1
     apache: 2.2.16
     php: 5.3.3
+    gcc: 4.4.5
     init: sysvinit
     state: dead
   - codename: wheezy
@@ -19,6 +20,7 @@
     kernel: 3.2.41
     mysql: 5.5
     php: 5.4.4
+    gcc: 4.7.2
     apache: 2.2.22
     init: sysvinit
   - codename: wheezy-backports
@@ -38,8 +40,9 @@
     kernel: 3.16.0
     mysql: 5.5
     php: 5.6.7
+    gcc: 4.9.2
     apache: 2.4.10
-    init: systemd
+    init: systemd v215
   - codename: jessie-backports
     version: 8
     release: April 2015
@@ -57,7 +60,8 @@
     mysql: mariadb-10.1
     php: 7.0
     apache: 2.4.25
-    init: systemd
+    gcc: 6.3.0
+    init: systemd v232
   - codename: buster
     version: 10
     release: 2019?
@@ -65,6 +69,18 @@
     kernel: unknown
     mysql: unknown
     php: unknown
+    gcc: unknown
+    apache: unknown
+    init: systemd
+    state: future
+  - codename: bullseye
+    version: 11
+    release: 2021?
+    eol: 2024?
+    kernel: unknown
+    mysql: unknown
+    php: unknown
+    gcc: unknown
     apache: unknown
     init: systemd
     state: future
@@ -78,6 +94,7 @@
     mysql: 5.0.95
     apache: 2.2.3
     php: 5.1.6
+    gcc: 4.1.2
     init: sysvinit
     state: dead
   - version: 6
@@ -88,6 +105,7 @@
     mysql: 5.1.71
     apache: 2.2.15
     php: 5.3.3
+    gcc: 4.4.7
     init: sysvinit
   - version: 7
     codename: Maipo
@@ -97,7 +115,8 @@
     mysql: mariadb-5.5.35
     apache: 2.4.6
     php: 5.4.16
-    init: systemd
+    gcc: 4.8.5
+    init: systemd v219
 - distro: Ubuntu LTS
   releases:
   - version: 10.04
@@ -108,6 +127,7 @@
     kernel: 2.6.32
     mysql: 5.1.41
     php: 5.3.2
+    gcc: 4.4.3
     apache: 2.2.14
     init: upstart
   - version: 12.04
@@ -116,6 +136,7 @@
     eol: April 2017
     kernel: 3.2.0
     mysql: 5.5.22
+    gcc: 4.6.3
     apache: 2.2.22
     php: 5.3.10
     init: upstart
@@ -128,23 +149,35 @@
     mysql: 5.5.47
     apache: 2.4.7
     php: 5.5.9
+    gcc: 4.8.2
     init: upstart
   - version: 16.04
     codename: Xenial Xerus
     release: April 2016
     eol: April 2021
     kernel: 4.4.0
+    gcc: 5.3.1
     mysql: 5.7.12
     php: 7.0.4
     apache: 2.4.18
-    init: systemd
+    init: systemd v229
   - version: 18.04
     codename: Bionic Beaver
     release: April 2018
     eol: April 2023
+    kernel: 4.15
+    mysql: 4.7.21
+    php: 7.2.3
+    gcc: 7.3.0
+    apache: 2.4.29
+    init: systemd v237
+    state: current
+  - version: 20.04
+    codename: Fadjective Fanimal
+    release: April 2020
     kernel: unknown
-    mysql: unknown
     php: unknown
+    gcc: unknown
     apache: unknown
-    init: systemd?
+    init: systemd
     state: future
