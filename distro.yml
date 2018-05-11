@@ -175,6 +175,7 @@
   - version: 20.04
     codename: Fadjective Fanimal
     release: April 2020
+    eol: April 2025
     kernel: unknown
     php: unknown
     gcc: unknown
