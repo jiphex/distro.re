@@ -33,6 +33,10 @@ th {
 	border-bottom: 2px solid #aaa;
 }
 
+div#tablewrapper {
+	overflow-x: auto;
+}
+
 @media screen {
 	#attrib {
 		display: none;

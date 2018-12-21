@@ -7,44 +7,46 @@
 		<title>Distro EOL dates</title>	
 	</head>
 	<body>
-		<table>
-			<tr>
-				<th>Distro</th>
-				<th>Codename</th>
-				<th>Version</th>
-				<th>Release Date</th>
-				<th>End of Life</th>
-				<th>Kernel</th>
-				<th>Apache</th>
-				<th>PHP</th>
-				<th>MySQL</th>
-				<th>GCC</th>
-				<th>init</th>
-			</tr>
-			<% for distro in distros %>
-				<% distro["releases"].each_with_index do |release,i| %>
-					<% if release["state"] %>
-						<tr class='<%=release["state"]%>'>
-					<% else %>
-						<tr class='alive'>
-					<% end %>
-						<% if i == 0 %>
-							<td class='distro' rowspan='<%=distro['releases'].length%>'><%=distro["distro"]%></td>
+		<div id='tablewrapper'>
+			<table>
+				<tr>
+					<th>Distro</th>
+					<th>Codename</th>
+					<th>Version</th>
+					<th>Release Date</th>
+					<th>End of Life</th>
+					<th>Kernel</th>
+					<th>Apache</th>
+					<th>PHP</th>
+					<th>MySQL</th>
+					<th>GCC</th>
+					<th>init</th>
+				</tr>
+				<% for distro in distros %>
+					<% distro["releases"].each_with_index do |release,i| %>
+						<% if release["state"] %>
+							<tr class='<%=release["state"]%>'>
+						<% else %>
+							<tr class='alive'>
 						<% end %>
-						<td class='data codename'>&#8220;<%=release["codename"] or "-" %>&#8221;</td>
-						<td class='data version'><%=release["version"]%></td>
-						<td class='data release'><%=release["release"]%></td>
-						<td class='data eol'><%=release["eol"]%></td>
-						<td class='data kernel'><%=release["kernel"] or "unknown"%></td>
-						<td class='data apache'><%=release["apache"] or "unknown"%></td>
-						<td class='data php'><%=release["php"] or "unknown"%></td>
-						<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
-						<td class='data gcc'><%=release["gcc"] or "unknown"%></td>
-						<td class='data init'><%=release["init"] or "unknown"%></td>
-					</tr>
+							<% if i == 0 %>
+								<td class='distro' rowspan='<%=distro['releases'].length%>'><%=distro["distro"]%></td>
+							<% end %>
+							<td class='data codename'>&#8220;<%=release["codename"] or "-" %>&#8221;</td>
+							<td class='data version'><%=release["version"]%></td>
+							<td class='data release'><%=release["release"]%></td>
+							<td class='data eol'><%=release["eol"]%></td>
+							<td class='data kernel'><%=release["kernel"] or "unknown"%></td>
+							<td class='data apache'><%=release["apache"] or "unknown"%></td>
+							<td class='data php'><%=release["php"] or "unknown"%></td>
+							<td class='data mysql'><%=release["mysql"] or "unknown"%></td>
+							<td class='data gcc'><%=release["gcc"] or "unknown"%></td>
+							<td class='data init'><%=release["init"] or "unknown"%></td>
+						</tr>
+					<% end %>
 				<% end %>
-			<% end %>
-		</table>
+			</table>
+		</div>
 		<p>Data last updated: <%=updated%></p>
 		<div id='meta'>
 			<p><a href=<%=distrofile%>>Raw Data</a></p>
