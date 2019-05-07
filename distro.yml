@@ -117,6 +117,16 @@
     php: 5.4.16
     gcc: 4.8.5
     init: systemd v219
+  - version: 8
+    codename: Ootpa
+    release: May 2019
+    eol: Mid-2029
+    kernel: 4.18.0
+    mysql: 8.0.13
+    apache: 2.4.37
+    php: 7.2.11
+    gcc: 8.21
+    init: systemd v239
 - distro: Ubuntu LTS
   releases:
   - version: 10.04
