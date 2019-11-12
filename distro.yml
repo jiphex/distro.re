@@ -43,6 +43,7 @@
     gcc: 4.9.2
     apache: 2.4.10
     init: systemd v215
+    state: dead
   - codename: jessie-backports
     version: 8
     release: April 2015
@@ -52,6 +53,7 @@
     php: 5.6.7
     apache: 2.4.10
     init: systemd
+    state: dead
   - codename: stretch
     version: 9
     release: June 2017
@@ -64,15 +66,14 @@
     init: systemd v232
   - codename: buster
     version: 10
-    release: 2019?
+    release: July 2019
     eol: 2022?
-    kernel: unknown
-    mysql: unknown
-    php: unknown
-    gcc: unknown
-    apache: unknown
-    init: systemd
-    state: future
+    kernel: 4.19.37
+    mysql: mariadb-10.3
+    php: 7.3.4
+    gcc: 8.3.0
+    apache: 2.4.38
+    init: systemd v241
   - codename: bullseye
     version: 11
     release: 2021?
@@ -117,6 +118,16 @@
     php: 5.4.16
     gcc: 4.8.5
     init: systemd v219
+  - version: 8
+    codename: Ootpa
+    release: May 2019 (RHEL)
+    eol: June 2030?
+    kernel: 4.18
+    mysql: mariadb 10.3.11
+    apache: 2.4.37
+    php: 7.2.11
+    gcc: 8.2.1
+    init: systemd v239
 - distro: Ubuntu LTS
   releases:
   - version: 10.04
